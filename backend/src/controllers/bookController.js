@@ -10,6 +10,36 @@ let books =[
         totalPages: 200,
         startDate: "Wed Dec 01 2021 17:35:33 GMT-0300",
         lastUpdate: "Wed Dec 01 2021 17:35:33 GMT-0300",
+    },
+    {
+        id: shortid.generate(),
+        name: 'Orgulho e Preconceito',
+        author: 'Jane Austen',
+        finished: false,
+        lastPage: 85,
+        totalPages: 350,
+        startDate: "Wed Dec 01 2021 17:35:33 GMT-0300",
+        lastUpdate: "Wed Dec 01 2021 17:35:33 GMT-0300",
+    },
+    {
+        id: shortid.generate(),
+        name: 'Battle Royale',
+        author: 'Koushun Takami',
+        finished: false,
+        lastPage: 259,
+        totalPages: 515,
+        startDate: "Wed Dec 01 2021 17:35:33 GMT-0300",
+        lastUpdate: "Wed Dec 01 2021 17:35:33 GMT-0300",
+    },
+    {
+        id: shortid.generate(),
+        name: 'Capitães de Areia',
+        author: 'Jorge Amado',
+        finished: true,
+        lastPage: 515,
+        totalPages: 515,
+        startDate: "Wed Dec 01 2021 17:35:33 GMT-0300",
+        lastUpdate: "Wed Dec 01 2021 17:35:33 GMT-0300",
     }
 ]
 
