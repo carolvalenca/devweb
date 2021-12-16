@@ -6,15 +6,53 @@ import api from "../../services/api";
 import './style.css';
 
 const Main = () => {
-    const [books, setBooks] = useState([]);
+    const [books, setBooks] = useState([
+        {
+            name: 'Harry Potter e o Cálice de Fogo',
+            author: 'J. K. Rowling',
+            finished: false,
+            lastPage: 52,
+            totalPages: 200,
+            startDate: "Wed Dec 01 2021 17:35:33 GMT-0300",
+            lastUpdate: "Wed Dec 01 2021 17:35:33 GMT-0300",
+        },
+        {
+            name: 'Orgulho e Preconceito',
+            author: 'Jane Austen',
+            finished: false,
+            lastPage: 85,
+            totalPages: 350,
+            startDate: "Wed Dec 01 2021 17:35:33 GMT-0300",
+            lastUpdate: "Wed Dec 01 2021 17:35:33 GMT-0300",
+        },
+        {
+            name: 'Battle Royale',
+            author: 'Koushun Takami',
+            finished: false,
+            lastPage: 259,
+            totalPages: 515,
+            startDate: "Wed Dec 01 2021 17:35:33 GMT-0300",
+            lastUpdate: "Wed Dec 01 2021 17:35:33 GMT-0300",
+        },
+        {
+            name: 'Capitães de Areia',
+            author: 'Jorge Amado',
+            finished: true,
+            lastPage: 515,
+            totalPages: 515,
+            startDate: "Wed Dec 01 2021 17:35:33 GMT-0300",
+            lastUpdate: "Wed Dec 01 2021 17:35:33 GMT-0300",
+        }
+    ]);
     const [filter, setFilter] = useState('todas');
     const [booksFiltered, setBooksFiltered] = useState([])
 
     useEffect(() => {
-        api.get('/books').then((res) => {
-            setBooks(res.data)
-            setBooksFiltered(res.data)
-        })
+        // api.get('/books').then((res) => {
+        //     setBooks(res.data)
+        //     setBooksFiltered(res.data)
+        // })
+        setBooksFiltered(books)
     }, [])
 
     const filterBooks = (e) => {
