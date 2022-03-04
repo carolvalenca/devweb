@@ -47,6 +47,18 @@ const getBooks = (_, res) => {
     return res.json(books);
 }
 
+const getBook = (req, res) => {
+    const { id } = req.params;
+
+    const ret = books.filter(elem => elem.id === id);
+
+    if (ret.length === 0) {
+        res.status(404).json({message: 'Livro não encontrado'});
+    } else {
+        res.json(ret);
+    }    
+}
+
 const saveBook = (req, res) => {
     let book = req.body;
     let startDate = new Date();
@@ -107,6 +119,7 @@ const deleteBook = (req, res) => {
 
 module.exports = {
     getBooks,
+    getBook,
     saveBook,
     editBook,
     deleteBook,

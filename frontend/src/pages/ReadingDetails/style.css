@@ -1,0 +1,85 @@
+#reading-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#reading-details-container .content-container {
+  width: 55%;
+  margin-top: 80px;
+}
+
+#reading-details-container .goback-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+#reading-details-container .buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f213a;
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#reading-details-container .tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2632;
+  padding: 12px 15px;
+  border-radius: 5px;
+  width: 140px;
+  margin-left: 20px;
+}
+
+#reading-details-container .tag p {
+  color: #ec9836;
+  margin-left: 5px;
+}
+
+#reading-details-container .add-button {
+  display: flex;
+  align-items: center;
+  background-color: #7c5df7;
+  color: #fcfdfd;
+  font-weight: bold;
+  padding: 15px;
+  border: 0;
+  border-radius: 25px;
+  margin: 0 5px;
+}
+
+#reading-details-container .add-button:hover {
+  background-color: #634ac6;
+}
+
+#reading-details-container .button-label {
+  margin-left: 10px;
+  margin-right: 8px;
+}
+
+#reading-details-container .buttons {
+  display: flex;
+  align-items: center;
+}
+
+#reading-details-container .status {
+  display: flex;
+  align-items: center;
+}
+
+#reading-details-container .book-info-container {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  background-color: #1f213a;
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}

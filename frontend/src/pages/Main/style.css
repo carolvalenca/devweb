@@ -22,7 +22,7 @@
 #main-container .header .filter {
   display: flex;
   align-items: center;
-  width: 35%;
+  /* width: 35%; */
   /* background-color: #fcfdfd; */
   justify-content: space-between;
 }
@@ -50,3 +50,16 @@
 section {
   margin-top: 80px;
 }
+
+/* #main-container .add-modal {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  background-color: papayawhip;
+}
+
+#main-container .modal-overlay {
+  background-color: black;
+} */

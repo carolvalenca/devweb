@@ -5,6 +5,8 @@ const BookController = require('./controllers/bookController');
 
 routes.get('/books', BookController.getBooks);
 
+routes.get('/books/:id', BookController.getBook);
+
 routes.post('/books/save', BookController.saveBook);
 
 routes.put('/books/edit/:id', BookController.editBook);
