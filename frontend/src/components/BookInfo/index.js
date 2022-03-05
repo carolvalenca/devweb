@@ -11,7 +11,8 @@ const BookInfo = ({ label, information, showInput, value, setValue, editBook }) 
       {showInput ? (
         <div>
             <input
-            type='text'
+            type='number'
+            min={0}
             value={value}
             onChange={(e) => setValue(e.target.value)}
             style={{marginRight: '2px'}}

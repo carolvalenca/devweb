@@ -67,8 +67,8 @@ const ReadingDetails = () => {
         });
     } else {
         const body = {
-            lastPage: parseInt(value),
-            finished: parseInt(value) < book.totalPages ? false : true
+            lastPage: value,
+            finished: value < parseInt(book.totalPages) ? false : true
         }
     
         console.log(body)
@@ -86,8 +86,11 @@ const ReadingDetails = () => {
   const validateValue = () => {
     let errorMsg = '';
 
-    if (isNaN(parseInt(value))) errorMsg = 'Última página lida precisa ser um número inteiro!'
-    else if (value > book.totalPages) errorMsg = 'Última página lida não pode ser maior que o total de páginas!'
+    console.log(typeof book.totalPages)
+
+    if (value === '') errorMsg = 'Última página lida precisa ser preenchida antes de enviar!'
+    else if (value > parseInt(book.totalPages)) errorMsg = 'Última página lida não pode ser maior que o total de páginas do livro!'
+    else if (value < 0) errorMsg = 'Última página lida não pode ser negativo!'
 
     return errorMsg;
   }
