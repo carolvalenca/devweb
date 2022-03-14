@@ -1,12 +1,10 @@
 import { useState } from "react";
 
-const Input = ({label}) => {
-    const [value, setValue] = useState('');
-
+const Input = ({label, value, setValue, type = 'text'}) => {
     return (
         <div>
             <p>{label}</p>
-            <input type="text" value={value} onChange={e => setValue(e.target.value)} />
+            <input type={type} value={value} min={0} onChange={setValue} />
         </div>
     )
 }

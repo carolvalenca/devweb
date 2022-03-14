@@ -44,7 +44,6 @@ const Main = () => {
 
     return (
         <div id="main-container">
-            <button onClick={openModal}>Open Modal</button>
             <Modal show={modalIsOpen} handleClose={closeModal} /> 
             <div className="content-container">
                 <header className='header'>
@@ -58,7 +57,7 @@ const Main = () => {
                             <option value="terminadas">Terminadas</option>
                             <option value="pendentes">Em andamento</option>
                         </select>
-                        <button className='add-button'>
+                        <button className='add-button' onClick={openModal}>
                             <AiFillPlusCircle size='35px'/>
                             <p className="button-label">Adicionar leitura</p>
                         </button>
